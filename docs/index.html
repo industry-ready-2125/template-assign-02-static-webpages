@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('C:/Users/siris/OneDrive/Desktop/travel.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .packages {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .package {
+            width: calc(33.33% - 20px);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .package:hover {
+            transform: translateY(-5px);
+        }
+
+        .package img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .package h3 {
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .package p {
+            color: #ccc;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 10px;
+            width: 50%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Travel Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page02.html">Destinations</a></li>
+                <li><a href="page03.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Explore with Us</h2>
+            <p>Find your dream destination and create unforgettable memories.</p>
+            <a href="page02.html" class="btn">Discover Destinations</a>
+        </section>
+        <section class="packages">
+            <div class="package">
+                <img src="C:/Users/siris/OneDrive/Desktop/Delhi.jpg" alt="Delhi">
+                <h3>Delhi, India</h3>
+                <p>Visit iconic landmarks like the Lotus Temple, Red Fort, and India Gate.</p>
+                <p>Package: $10,000</p>
+                <button class="book-btn" data-destination="Delhi">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="C:/Users/siris/OneDrive/Desktop/maldives.jpeg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Experience underwater dining, tranquil paradises, glowing beaches, and more.</p>
+                <p>Package: $20,000</p>
+                <button class="book-btn" data-destination="Maldives">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="C:/Users/siris/OneDrive/Desktop/goa.jpg" alt="Goa">
+                <h3>Goa, India</h3>
+                <p>Explore Dudhsagar Waterfalls, Anjuna Beach, and Chapora Fort.</p>
+                <p>Package: $25,000</p>
+                <button class="book-btn" data-destination="Goa">Book Now</button>
+            </div
