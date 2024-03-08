@@ -2,12 +2,15 @@
 <html>
 <head>
     <title>crop price</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         #mainh {
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 30px;
             color: rgb(21, 21, 22);
+            font-size: 30px;
         }
         #header {
             height: 150px;
@@ -60,15 +63,41 @@
         tr:hover {
             background-color: #f2f2f2;
         }
+        .button {
+            background-color: #9ef57c;
+            border: none;
+            color: #0f0f0f; 
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0; 
+            border: 1px solid #b4f39b; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
     </style>
+    
 </head>
 <body>
-    
+    <nav class="bg-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-black font-bold text-lg">Crop Price</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-black">Home</a></li>
+                <li><a href="#about" class="text-black">About</a></li>
+                <li><a href="#services" class="text-black">Services</a></li>
+                <li><a href="#contact" class="text-black">Contact</a></li>
+            </ul>
+        </div>
+    </nav>    
     <div id="header">
-        <h1 id="mainh">CROP PRICES</h1>
+        <h1 id="mainh"><b>CROP PRICES</b></h1>
     </div>
     <div id = "about">
-        <h2 style="text-align: center; padding-top: 10px;">ABOUT</h2>
+        <h2 style="text-align: center; padding-top: 10px;"><b>ABOUT</b></h2>
         <table>
             <tr>
                 <th>INTRODUCTION</th>
@@ -86,26 +115,31 @@
         
     </div>
     <div id = "services">
-        <h2 style="text-align: center; padding-top:10px ;">SERVICES</h2>
+        <h2 style="text-align: center; padding-top:10px ;"><b>SERVICES</b></h2>
         <div class="boxed">
             <h3>KNOW PRICES</h3>
             <p>know about the prices of the crops</p>
+            <button class="button">Know More</button>
+
         </div>
         <div class="boxed">
             <h3>CROP DETAILS</h3>
             <p>Here you can find out the details of the crop.</p>
+            <button class="button">Know More</button>
         </div>
         <div class="boxed">
             <h3>FARMERS REVIEWS</h3>
             <p>know about the farmers reviews</p>
-        </div>
+            <button class="button">Know More</button>
+       </div>
         <div class="boxed">
             <h3>MERCHANT REVIEWS</h3>
             <p>know about the merchant reviews</p>
+            <button class="button">Know More</button>
         </div>   
     </div>
     <div id = "contact">
-        <h2 style="text-align: center; padding-top: 10px;">CONTACT</h2>
+        <h2 style="text-align: center; padding-top: 10px;"><b>CONTACT</b></h2>
         <table>
             <tr>
                 <th>EMAIL</th>
