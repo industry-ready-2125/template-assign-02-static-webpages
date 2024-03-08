@@ -16,21 +16,50 @@
             
         }
         #about{
-            height:150px
+            height:auto
         }
-        
-        
-        .box {
-            width: auto;
-            height: auto; 
-            background-color: #f0f0f0; 
-            border: 1px solid #ccc;
-            border-radius: 10px; 
-            padding - left: 20px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .boxed{
+            background-color: rgba(187, 191, 194, 0.5);
+            width: 300px;
+            height: 200px;
+            text-align: center;
             margin: 20px;
-            display: inline-block;             
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            position: relative;
             }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -40,26 +69,61 @@
     </div>
     <div id = "about">
         <h2 style="text-align: center; padding-top: 10px;">ABOUT</h2>
-            <p style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> This is a website that provides the current prices of crops in the market. It is a platform that helps farmers to know the current prices of crops in the market. This will help them to sell their crops at a fair price.  </p>
+        <table>
+            <tr>
+                <th>INTRODUCTION</th>
+                <td>Welcome to our platform, a website dedicated to providing up-to-date market prices for various crops. We understand the importance of fair pricing for farmers, and our platform aims to bridge the gap by offering real-time information on crop prices in the market.</td>
+            </tr>
+            <tr>
+                <th>OUR MISSION</th>
+                <td>Our mission is to provide farmers with the information they need to make informed decisions about their crops. We believe that by providing accurate and timely market prices, we can help farmers get the best value for their produce.</td>
+            </tr>
+            <tr>
+                <th>HOW IT WORKS</th>
+                <td>Through our website, farmers can easily access the current prices of different crops in various markets. They can search for specific crops or browse through categories to find the information they need. Our platform aggregates data from reliable sources to ensure accuracy and reliability.</td>
+            </tr>
+        </table>
+        
     </div>
     <div id = "services">
         <h2 style="text-align: center; padding-top:10px ;">SERVICES</h2>
-        <div class="box">
-            <h2>Box Example</h2>
-            <p>This is a simple box created using HTML and CSS.</p>
+        <div class="boxed">
+            <h3>KNOW PRICES</h3>
+            <p>know about the prices of the crops</p>
         </div>
-        <div class="box">
-            <h2>Box Example</h2>
-            <p>This is a simple box created using HTML and CSS.</p>
+        <div class="boxed">
+            <h3>CROP DETAILS</h3>
+            <p>Here you can find out the details of the crop.</p>
         </div>
-        <div class="box">
-            <h2>Box Example</h2>
-            <p>This is a simple box created using HTML and CSS.</p>
+        <div class="boxed">
+            <h3>FARMERS REVIEWS</h3>
+            <p>know about the farmers reviews</p>
         </div>
-        <div class="box">
-            <h2>Box Example</h2>
-            <p>This is a simple box created using HTML and CSS.</p>
-        </div>
+        <div class="boxed">
+            <h3>MERCHANT REVIEWS</h3>
+            <p>know about the merchant reviews</p>
+        </div>   
     </div>
+    <div id = "contact">
+        <h2 style="text-align: center; padding-top: 10px;">CONTACT</h2>
+        <table>
+            <tr>
+                <th>EMAIL</th>
+                <td>croppice@gmail.com</td>
+            </tr>
+            <tr>
+                <th>PHONE</th>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <th>ADDRESS</th>
+                <td>123 Main Street, City, Country</td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <p style="text-align: center;">&copy; 2021 Crop Prices</p>
+    </div>
+
 </body>
 </html>
